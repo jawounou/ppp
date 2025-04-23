@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jennifer Awounou</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="engagements.html">Engagements</a></li>
+                <li><a href="experiences.html">Expériences</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="orientation.html">Orientation</a></li>
+                <li><a href="formation-vs-projet.html">Formation & Projet</a></li>
+                <li><a href="projet-pro.html">Projet Pro</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li> <!-- Lien vers la page Contact -->
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact">
+        <h1>Contactez-moi</h1>
+        <p>Vous avez une question, une proposition de collaboration, ou simplement envie de discuter ? N'hésitez pas à m'envoyer un message !</p>
+
+        <!-- Formulaire de contact -->
+        <form action="contact.php" method="POST">
+            <label for="name">Nom :</label><br>
+            <input type="text" id="name" name="name" required placeholder="Votre nom"><br><br>
+
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" required placeholder="Votre email"><br><br>
+
+            <label for="message">Message :</label><br>
+            <textarea id="message" name="message" rows="5" required placeholder="Votre message"></textarea><br><br>
+
+            <input type="submit" value="Envoyer">
+        </form>
+
+        <!-- Informations supplémentaires de contact -->
+        <div class="contact-info">
+            <p><strong>Email :</strong> <a href="mailto:jeniferawounou2003@gmail.com">jeniferawounou2003@gmail.com</a></p>
+            <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/jennifer-awounou" target="_blank">https://www.linkedin.com/in/jennifer-awounou</a></p>
+            <p><strong>GitHub :</strong> <a href="https://github.com/jawounou" target="_blank">https://github.com/jawounou</a></p>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>© 2025 Jennifer Awounou - Tous droits réservés | Contact : jeniferawounou2003@gmail.com</p>
+    </footer>
+</body>
+</html>

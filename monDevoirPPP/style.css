@@ -1,0 +1,342 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffdf7;
+    color: #1a1a1a;
+    line-height: 1.6;
+    padding-top: 80px;
+}
+
+/* NAVIGATION */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ff6f61; /* Corail */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: border-bottom 0.3s ease;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #ffd43b; /* Jaune vif */
+}
+
+/* SECTIONS */
+main {
+    padding: 40px 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    color: #004d5c; /* Bleu profond */
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1.1em;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* LIENS ACCÈS RAPIDE */
+.liens-pages ul {
+    margin-top: 30px;
+}
+
+.liens-pages li {
+    margin: 10px 0;
+    font-size: 1.05em;
+}
+
+.liens-pages a {
+    color: #004d5c;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.liens-pages a:hover {
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+/* PHOTO */
+.photo {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffd43b;
+    margin-bottom: 20px;
+}
+
+/* TABLEAUX ET CARTES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #ffb74d;
+    color: white;
+}
+
+/* FORMULAIRES */
+form {
+    margin-top: 30px;
+    background-color: #e0f7fa; /* Bleu clair turquoise */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #e65100;
+}
+
+/* FOOTER */
+footer {
+    background-color: #004d5c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 60px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .intro h1 {
+        font-size: 1.8em;
+    }
+
+    .photo {
+        width: 120px;
+        height: 120px;
+    }
+}
+/* Global styling */
+.engagements {
+    padding: 40px 20px;
+    background-color: #f4f6f9;  /* Fond doux */
+    font-family: 'Poppins', sans-serif;
+}
+
+.engagements h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color:#004d5c;  /* Bleu doux */
+    margin-bottom: 30px;
+}
+
+/* Cartes d'engagement */
+.engagement-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.engagement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Info des cartes */
+.engagement-info h2 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.engagement-info p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px; /* Espace entre le texte et l'image */
+}
+
+/* Image des cartes */
+.engagement-card img {
+    width: 80%;              /* Ajuste la largeur de l'image pour qu'elle soit plus petite que le conteneur */
+    max-width: 600px;        /* Limite la largeur max à 600px */
+    height: auto;            /* Maintient les proportions de l'image */
+    object-fit: cover;       /* Adapte l'image à son conteneur */
+    border-radius: 8px;      /* Coins arrondis */
+}
+
+/* Citation */
+blockquote {
+    font-style: italic;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-left: 4px solid  #004d5c;
+    text-align: center;
+    margin-top: 40px;
+}
+details summary {
+    cursor: pointer;
+    padding: 8px;
+    font-weight: bold;
+    background-color: #f0f4ff;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+details p {
+    padding: 10px;
+    margin: 0;
+    background-color: #ffffff;
+    border-left: 4px solid #004d5c;
+}
+
+.slider {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.slider img,
+.slider blockquote {
+    scroll-snap-align: center;
+    flex: 0 0 100%;
+}
+/* Style spécifique pour la page Contact */
+.contact {
+    padding: 40px 20px;
+    background-color: #f4f6f9; /* Fond doux */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2.5em;
+    color: #004d5c; /* Bleu doux */
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Formulaire de contact */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form input[type="submit"] {
+    background-color: #004d5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e65100;
+}
+
+/* Informations de contact */
+.contact-info {
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+
+.contact-info a {
+    color: #004d5c;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
